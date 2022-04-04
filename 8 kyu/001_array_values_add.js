@@ -37,11 +37,13 @@ function uniteArrays(arr1, arr2 = [4, 5, 6], arr3) {
 }
 let result4 = uniteArrays([1, 2, 3], [], [7, 5, 6]);
 console.log(result4);//[1, 2, 3, 7, 5, 6]
+
 function uniteArraysWithSpread(...arrays) {
     return [].concat(...arrays);
 }
 let result5 = uniteArraysWithSpread([1,2],[3,4],[5,6,7],[8,9,10]);
 console.log(result5);// [1,2,3,4,5,6,7,8,9,10]
+
 //----unit tests learn ------------------------------------
 const chai = require("chai");
 const assert = chai.assert;
